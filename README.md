@@ -4,6 +4,13 @@
 
 Simple HTTP redirection service built on top of Nginx.
 
-## How It Works
+## How to run
 
-(TBD)
+### From the source
+- `export IMAGE_NAME=my-redirector`
+- `docker build -t $IMAGE_NAME .`
+- `docker run -e DESTINATION=your.website.com -p 80:80 $IMAGE_NAME`
+
+### From Docker Hub
+- `docker run -e DESTINATION=your.website.com -p 80:80 rainist/redirector`
+
