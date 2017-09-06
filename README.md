@@ -7,10 +7,15 @@ Simple HTTP redirection service built on top of Nginx.
 ## How to run
 
 ### From the source
-- `export IMAGE_NAME=my-redirector`
-- `docker build -t $IMAGE_NAME .`
-- `docker run -e DESTINATION=your.website.com -p 80:80 $IMAGE_NAME`
+
+```bash
+export IMAGE_NAME=my-redirector
+docker build -t $IMAGE_NAME .
+docker run -e DESTINATION=your.website.com -p 80:80 $IMAGE_NAME
+```
 
 ### From Docker Hub
-- `docker run -e DESTINATION=your.website.com -p 80:80 rainist/redirector`
 
+```bash
+docker run -e DESTINATION=your.website.com -p 80:80 rainist/redirector
+```
