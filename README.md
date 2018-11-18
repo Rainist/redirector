@@ -17,5 +17,5 @@ docker run -e DESTINATION=your.website.com -p 80:80 $IMAGE_NAME
 ### From Docker Hub
 
 ```bash
-docker run -e DESTINATION=your.website.com -p 80:80 rainist/redirector
+docker run -it -e DESTINATION=your.website.com -p 80:80 rainist/redirector
 ```
